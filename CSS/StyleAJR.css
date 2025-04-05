@@ -74,7 +74,59 @@ footer {
     padding: 15px;
     background-color: #333;
     color: #fff;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .company-container {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .company-text {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .country {
+        width: 100px;
+        padding: 8px;
+    }
+}
+
+/* Telefono */
+@media (max-width: 480px) {
+    .company-container {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .company-text {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .country {
+        width: 90px;
+        padding: 5px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
 }

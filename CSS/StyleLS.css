@@ -59,6 +59,7 @@ nav a:hover{
     background-color: black; 
     flex-wrap: nowrap; 
 }
+
 .Cards {
     background-color:  black;
     border-radius: 8px;
@@ -126,11 +127,12 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 768px) { /* Tablets */
+/* Tablets */
+@media (max-width: 768px) {
     nav li {
         display: block;
-        padding: 20px;
-        font-size: 18px;
+        padding: 15px;
+        font-size: 20px;
     }
 
     .Cards {
@@ -138,14 +140,15 @@ footer {
         max-width: 250px;
     }
 
-    .highlight h1 {
-        font-size: 22px;
+    .highlight {
+        max-width: 95%;
     }
 }
 
-@media (max-width: 480px) { /* Telefonos */
+/* Telefono */
+@media (max-width: 480px) {
     nav li {
-        font-size: 16px;
+        font-size: 18px;
         padding: 10px;
     }
 
@@ -157,8 +160,9 @@ footer {
     .highlight h1 {
         font-size: 18px;
     }
-    
+
     footer {
         font-size: 12px;
+        padding: 10px;
     }
 }
