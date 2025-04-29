@@ -128,41 +128,66 @@ footer {
 }
 
 /* Tablets */
-@media (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     nav li {
-        display: block;
-        padding: 15px;
+        padding: 30px;
         font-size: 20px;
     }
 
-    .Cards {
-        width: 100%;
-        max-width: 250px;
+    .tarjeta {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .highlight {
-        max-width: 95%;
+    .Cards {
+        width: 45%;
+        height: auto;
     }
 }
 
-/* Telefono */
-@media (max-width: 480px) {
+/* Móviles */
+@media screen and (max-width: 600px) {
     nav li {
+        display: block;
+        padding: 10px 0;
         font-size: 18px;
+    }
+
+    .highlight {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .highlight p,
+    .highlight ul {
+        margin: 0 10px;
+        text-align: left;
+    }
+
+    .tarjeta {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
         padding: 10px;
     }
 
     .Cards {
-        width: 100%;
-        max-width: 200px;
+        width: 90%;
+        height: auto;
     }
 
-    .highlight h1 {
-        font-size: 18px;
+    .Cards-content h1,
+    .Cards-content h2,
+    .Cards-content p {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 100px;
     }
 
     footer {
-        font-size: 12px;
+        font-size: 14px;
         padding: 10px;
     }
 }

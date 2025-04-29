@@ -126,39 +126,52 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 768px) { /* Tablets */
+/* Tablets */
+@media screen and (max-width: 1024px) {
     nav li {
-        display: block;
-        padding: 20px;
-        font-size: 18px;
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .tarjeta {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .Cards {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .highlight h1 {
-        font-size: 22px;
+        width: 80%;
+        height: auto;
     }
 }
 
-@media (max-width: 480px) { /* Telefonos */
+/* Celulares */
+@media screen and (max-width: 600px) {
     nav li {
-        font-size: 16px;
+        display: block;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .tarjeta {
+        flex-direction: column;
+        align-items: center;
         padding: 10px;
     }
 
     .Cards {
-        width: 100%;
-        max-width: 200px;
+        width: 90%;
+        height: auto;
     }
 
-    .highlight h1 {
-        font-size: 18px;
+    .highlight p,
+    .highlight ul {
+        margin: 0 10px;
+        text-align: left;
     }
-    
-    footer {
-        font-size: 12px;
+
+    .Cards-content h1,
+    .Cards-content h2,
+    .Cards-content p {
+        font-size: 16px;
     }
 }

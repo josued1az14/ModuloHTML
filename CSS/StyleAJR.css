@@ -70,26 +70,21 @@ body {
 }
 
 footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #333;
-    color: #fff;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; 
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
 }
 
 /* Tablets */
-@media (max-width: 768px) {
-    .company-container {
-        padding: 15px;
-        width: 95%;
-    }
-
-    .logo {
-        width: 80px;
-    }
-
+@media screen and (max-width: 1024px) {
     .company-text {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .subtitle {
@@ -102,31 +97,35 @@ footer {
     }
 }
 
-/* Telefono */
-@media (max-width: 480px) {
+/* Móviles */
+@media screen and (max-width: 600px) {
     .company-container {
-        padding: 10px;
+        width: 95%;
+        margin: 10px auto;
+        padding: 15px;
     }
 
     .logo {
-        width: 60px;
+        width: 80px;
     }
 
     .company-text {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .subtitle {
         font-size: 16px;
+        margin-bottom: 15px;
     }
 
     .country {
-        width: 90px;
-        padding: 5px;
+        width: 45%;
+        padding: 8px;
+        font-size: 14px;
     }
 
     footer {
         font-size: 14px;
-        padding: 10px;
+        padding: 8px 0;
     }
 }
